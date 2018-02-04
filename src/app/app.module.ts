@@ -18,6 +18,7 @@ import { FavoritesPageComponent } from './favorites-page/favorites-page.componen
 // Services
 import { RijksApiService } from './rijks-api.service';
 import { SecretService } from './secret.service';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { SecretService } from './secret.service';
     HomePageComponent,
     BrowsePageComponent,
     FavoritesPageComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

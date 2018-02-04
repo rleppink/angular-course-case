@@ -7,14 +7,14 @@ import { FavoritesPageComponent } from './favorites-page/favorites-page.componen
 
 
 const routes: Routes = [
-    { path: '', component: HomePageComponent },
-    { path: 'browse', component: BrowsePageComponent },
+    { path: '',          component: HomePageComponent },
+    { path: 'browse',    component: BrowsePageComponent },
     { path: 'favorites', component: FavoritesPageComponent },
-    { path: '**', redirectTo: '/' },
+    { path: '**',        redirectTo: '/' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -15,7 +15,7 @@ export class RijksApiService {
 
 
     constructor(private http: HttpClient, private secret: SecretService) {
-        this.keyedApiUrl = `${rijksApiUrl}?key=${this.secret.getApiKey()}`;
+        this.keyedApiUrl = `${rijksApiUrl}?key=${this.secret.getApiKey()}&imgonly=True`;
     }
 
     searchAnything(q: string): Observable<any> {
