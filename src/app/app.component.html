@@ -1,0 +1,25 @@
+<nav class="navbar is-primary is-bold">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" routerLink="search">
+                <span class="icon">
+                    <i class="fas fa-paint-brush"></i>
+                </span>
+                <span><strong>RijksAPIcatie</strong></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu is-active">
+            <div class="navbar-start">
+                <a routerLink="search" class="navbar-item">Search</a>
+                <a routerLink="favorites" class="navbar-item">Favorites</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="section">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</section>

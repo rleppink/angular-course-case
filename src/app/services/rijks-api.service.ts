@@ -4,6 +4,9 @@ import { Observable } from 'rxjs/Observable';
 
 import { SecretService } from './secret.service';
 
+import { ISearchResult } from '../interfaces/isearch-result';
+
+
 
 const rijksApiUrl: string =
     'https://www.rijksmuseum.nl/api/nl/collection';
@@ -18,7 +21,7 @@ export class RijksApiService {
         this.keyedApiUrl = `${rijksApiUrl}?key=${this.secret.getApiKey()}&imgonly=True`;
     }
 
-    searchAnything(q: string): Observable<any> {
-        return this.http.get(`${this.keyedApiUrl}&q=${q}`);
+    searchAnything(q: string): Observable<ISearchResult> {
+        return this.http.get<ISearchResult>(`${this.keyedApiUrl}&q=${q}`);
     }
 }

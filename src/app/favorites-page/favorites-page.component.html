@@ -1,2 +1,10 @@
-<h1>Favorites</h1>
-<p>The ones you love the most</p>
+<h1 class="title">Favorites</h1>
+<h2 class="subtitle">
+    The ones you <strong>love</strong>
+</h2>
+
+<hr />
+
+<ul *ngFor="let favorite of favorites | async">
+    <art-object [artObject]="favorite"></art-object>
+</ul>

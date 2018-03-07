@@ -2,15 +2,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'app-search',
-    template:
-    `<input
-        type="text"
-        (keyup.enter)="onInput($event.target.value)">`
+    templateUrl: './search.component.html'
 })
 export class SearchComponent {
     @Output() userInput: EventEmitter<string> = new EventEmitter<string>();
 
-    onInput(input: string) {
+    search(input: string) {
         this.userInput.emit(input);
     }
 }

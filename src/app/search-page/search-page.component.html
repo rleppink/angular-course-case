@@ -1,0 +1,14 @@
+<h1 class="title">Search</h1>
+<h2 class="subtitle">Search for <strong>artworks in Rijksmuseum</strong></h2>
+
+<hr />
+
+<div class="content">
+    <app-search (userInput)="onInput($event)"></app-search>
+
+    <div class="section">
+        <ul *ngFor="let artObject of artObjects | async">
+            <art-object [artObject]="artObject"></art-object>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="field has-addons">
+    <div class="control has-icons-left">
+        <span class="icon is-small is-left">
+            <i class="fas fa-search"></i>
+        </span>
+        <input
+            #searchInput
+            class="input"
+            type="text"
+            placeholder="e.g. 'Monet', or 'blue'"
+            (keyup.enter)="search(searchInput.value)">
+    </div>
+    <div class="control">
+        <a class="button is-info" (click)="search(searchInput.value)">Search</a>
+    </div>
+</div>

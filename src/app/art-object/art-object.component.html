@@ -1,0 +1,35 @@
+<div class="box">
+    <div class="columns">
+        <div class="column">
+            <img src="{{ artObject.webImage.url }}">
+        </div>
+        <div class="column">
+            <div>
+                <strong>{{ artObject.title }}</strong>
+                <br>
+                <small>{{ artObject.principalOrFirstMaker }}</small>
+                <br><br>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat efficitur nisi quis laoreet. Aliquam suscipit diam a libero lobortis, eu commodo dui pulvinar. Morbi aliquet, odio vel imperdiet euismod, risus quam ultricies odio, eget fringilla dolor sapien a tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed porta nibh. Mauris facilisis quam ac mauris efficitur, in malesuada ligula lobortis. Aliquam sit amet nunc non nibh rutrum vulputate et sit amet leo. Sed et arcu et metus consequat malesuada. Aliquam ullamcorper ipsum ut facilisis fermentum. Sed ornare erat interdum posuere sodales. In ac augue blandit, maximus nibh ac, ullamcorper diam. Praesent a ligula pellentesque, sodales erat suscipit, egestas ipsum. Quisque pharetra imperdiet sapien, vitae accumsan nisl volutpat id. Pellentesque id mattis felis. Phasellus ultrices auctor iaculis. Fusce a laoreet enim, et commodo lacus.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a class="button is-outlined is-info">
+                <span class="icon is-small">
+                    <i class="fas fa-info"></i>
+                </span>
+                <span>
+                    Details
+                </span>
+            </a>
+            <a class="button is-outlined is-danger" (click)="toggleFavorite(artObject)">
+                <span class="icon is-small">
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    Favorite
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
