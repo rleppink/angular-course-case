@@ -597,7 +597,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var SecretService = /** @class */ (function () {
     function SecretService() {
     }
-    SecretService.prototype.getApiKey = function () { return 'bu9GpKLu'; };
+    SecretService.prototype.getApiKey = function () { return '<your-api-key>'; };
     SecretService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])()
     ], SecretService);
